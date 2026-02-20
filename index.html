@@ -13,6 +13,16 @@
   <meta property="twitter:title" content="TRNDX Digital | High-Impact Digital Growth">
   <meta property="twitter:description" content="Maximize your ROI with TRNDX Digital's expert SEO and Paid Ad strategies. Global reach, local expertise.">
   <script>
+window.addEventListener('scroll', function() {
+    // Load heavy scripts (chatbots, video players, tracking) only after scroll
+    if (window.pageYOffset > 10) {
+        const script = document.createElement('script');
+        script.src = 'YOUR_NON_ESSENTIAL_JS_URL';
+        document.body.appendChild(script);
+    }
+}, {passive: true, once: true});
+</script>
+<script>
 (function() {
     // 1. CSS ko inject karo directly (Sabse fast method)
     const style = document.createElement('style');
